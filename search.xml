@@ -3,7 +3,8 @@
   <entry>
     <title>搭建个人博客</title>
     <url>/2020/03/26/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="1-部署Blog"><a href="#1-部署Blog" class="headerlink" title="1.部署Blog"></a>1.部署Blog</h1><p>参考文档：</p>
+    <content><![CDATA[<a id="more"></a>
+<h1 id="1-部署Blog"><a href="#1-部署Blog" class="headerlink" title="1.部署Blog"></a>1.部署Blog</h1><p>参考文档：</p>
 <ul>
 <li>hexo官方文档：<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a></li>
 </ul>
