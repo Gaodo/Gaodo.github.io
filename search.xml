@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML简介</title>
+    <url>/2020/03/28/HTML%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h1 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h1><h2 id="网页的介绍"><a href="#网页的介绍" class="headerlink" title="网页的介绍"></a>网页的介绍</h2><ul>
+<li><p>网站是指在因特网上根据一定的规则，使用HTML等制作的用于展示特定内容相关的网页集合</p>
+</li>
+<li><p>网页是网站中的一‘页’，通常是HTML格式的文件，通过浏览器解析显示</p>
+</li>
+<li><p><code>网页是构成网站的基本元素</code>，通常由图片、链接、文字、声音、视频、等<code>元素</code>组成。通常我们看到的网页常以<code>.htm</code>或<code>.html</code>后缀结尾的文件，因此将其俗称为<code>HTML文件</code></p>
+</li>
+</ul>
+<h2 id="HTML语言"><a href="#HTML语言" class="headerlink" title="HTML语言"></a>HTML语言</h2><p><code>HTML</code>是指<code>超文本标记语言(Hyper Text Markup Language)</code>,它是用来描述网页的一种语言。</p>
+<ul>
+<li>HTML不是一种编程语言，而是一种标记语言。</li>
+<li>标记语言是一套标记标签(markup tag)。</li>
+<li>其中<code>超文本</code>是指：<code>超越文本限制</code>，它可以加入图片、声音、动画、多媒体等内容；<code>超级链接文本</code>,它可以充一个文件跳转到另一个文件，与世界各地主机的文件相连。</li>
+</ul>
+<h1 id="Web标准"><a href="#Web标准" class="headerlink" title="Web标准"></a>Web标准</h1><p>Web标准是由W3C组织和其他标准化组织制定的一系列标准的集合。W3C（万维网联盟）是国际著名的标准化组织</p>
+<h2 id="Web标准的作用"><a href="#Web标准的作用" class="headerlink" title="Web标准的作用"></a>Web标准的作用</h2><ul>
+<li>使不同开发人员写出的页面标准、统一</li>
+<li>让Web的发展前景更广阔</li>
+<li>内容被更广泛的设备访问</li>
+<li>更容易被搜索引擎搜索</li>
+<li>降低网站流量费用</li>
+<li>使网站更易于维护</li>
+<li>提高页面浏览速度</li>
+</ul>
+<h2 id="Web标准的构成"><a href="#Web标准的构成" class="headerlink" title="Web标准的构成"></a>Web标准的构成</h2><p>主要包括<code>结构(structure)</code>、<code>表现(Presentation)</code>、<code>行为(Behavior)</code>三方面。</p>
+<table>
+<thead>
+<tr>
+<th>标准</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>结构</td>
+<td>结构用于对<code>网页元素</code>进行整理和分类，主要指HTML</td>
+</tr>
+<tr>
+<td>表现</td>
+<td>表现用于设置网页元素的版式、颜色、大小、等<code>外观样式</code>，主要指CSS</td>
+</tr>
+<tr>
+<td>行为</td>
+<td>行为是指网页模型的定义及<code>交互</code>的编写， 主要指javascript</td>
+</tr>
+</tbody></table>
+<p>Web标准提出的最佳体验方案：<code>结构</code>,<code>表现</code>，<code>行为</code>相分离</p>
+<ul>
+<li>结构写道HTML文件中</li>
+<li>表现写到CSS文件中</li>
+<li>行为写到JavaScript文件中</li>
+</ul>
+<p><img src="./HTML%E7%AE%80%E4%BB%8B/Web%E6%A0%87%E5%87%86%E7%9A%84%E6%9E%84%E6%88%90.png" alt="Web标准的构成"></p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NuttX开发环境搭建</title>
+    <url>/2020/03/28/NuttX%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>NuttX是一个国外的实时操作系统（RTOS），其和国内的RT-Thread相差不多，本次是在ubuntu下搭建开发环境。</p>
+<a id="more"></a>
+
+<h2 id="源码下载"><a href="#源码下载" class="headerlink" title="源码下载"></a>源码下载</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone https://bitbucket.org/nuttx/nuttx.git nuttx</span><br><span class="line">git clone https://bitbucket.org/nuttx/apps.git apps</span><br><span class="line">git clone https://bitbucket.org/nuttx/buildroot.git buildroot</span><br><span class="line">git clone https://bitbucket.org/nuttx/tools.git tools</span><br><span class="line">git clone https://bitbucket.org/nuttx/uclibc.git uClibc++</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装编译相关依赖："><a href="#安装编译相关依赖：" class="headerlink" title="安装编译相关依赖："></a>安装编译相关依赖：</h2><p>参考<code>buildroot/README.md</code></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-apt install build-essential</span><br><span class="line">sudo apt-apt install bison flex gperf</span><br><span class="line">sudo apt-apt install libgmp-dev libmpc-dev libmpfr-dev libisl-dev</span><br><span class="line">sudo apt-apt install binutils-dev libelf-dev</span><br><span class="line">sudo apt-apt install libexpat-dev</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>NuttX</category>
+      </categories>
+      <tags>
+        <tag>NuttX</tag>
+        <tag>环境搭建</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建个人博客</title>
     <url>/2020/03/26/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<a id="more"></a>
